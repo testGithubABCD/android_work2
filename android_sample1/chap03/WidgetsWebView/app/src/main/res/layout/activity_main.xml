@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_onclick"
+        android:text="ホーム" />
+
+    <Button
+        android:id="@+id/btnEnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_onclick"
+        android:text="環境構築" />
+
+    <Button
+        android:id="@+id/btnPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_onclick"
+        android:text="出版社" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

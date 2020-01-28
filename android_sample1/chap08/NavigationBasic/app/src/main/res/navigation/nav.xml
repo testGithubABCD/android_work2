@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/beforeFragment">
+
+    <fragment
+        android:id="@+id/beforeFragment"
+        android:name="to.msn.wings.navigationbasic.BeforeFragment"
+        android:label="初期ページ"
+        tools:layout="@layout/fragment_before" >
+        <action
+            android:id="@+id/action_beforeFragment_to_afterFragment"
+            app:destination="@id/afterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterFragment"
+        android:name="to.msn.wings.navigationbasic.AfterFragment"
+        android:label="遷移後のページ"
+        tools:layout="@layout/fragment_after" >
+        <argument
+            android:name="num"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

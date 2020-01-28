@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:progress="150" />
+
+    <!-- -100～100の範囲で10区切りで変化する場合-->
+    <!--<SeekBar
+    android:id="@+id/seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:max="20" />-->
+</LinearLayout>
